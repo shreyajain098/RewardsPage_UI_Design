@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff0000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions fa-icon {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}

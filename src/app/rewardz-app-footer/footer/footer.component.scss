@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.info {
+  text-align: right;
+}
+
+.footer-items {
+  color: gray;
+  font-size: 14px;
+}
