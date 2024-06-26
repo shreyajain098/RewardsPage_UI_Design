@@ -1,0 +1,51 @@
+<div class="item-list-header">
+    <h3>{{ items.length }} results found</h3>
+    <button mat-raised-button class="sortBtn" (click)="drawer.toggle()">Sort</button>
+</div>
+
+<mat-drawer-container class="full-height-container" (backdropClick)="close()">
+    <mat-drawer #drawer class="sort-sidenav" mode="over" position="end">
+        <div class="sort-panel">
+            <div class="filter-reset-container">
+                <p>Filter By</p>
+                <span class="reset-all" (click)="resetAll()">Reset All</span>
+            </div>
+            <mat-radio-group>
+                <p>Sort</p>
+                <div class="sort-options">
+                    <mat-radio-button value="ascending" (change)="selectSortOption('ascending')">A to
+                        Z</mat-radio-button>
+                    <mat-radio-button value="descending" (change)="selectSortOption('descending')">Z to
+                        A</mat-radio-button>
+                </div>
+            </mat-radio-group>
+            <button mat-raised-button class="applyBtn" (click)="applySort()">Apply</button>
+        </div>
+    </mat-drawer>
+
+    <div class="main-content">
+        <div class="item-cards">
+            <div class="item-card" *ngFor="let item of items" [class.out-of-stock]="item.quantity === 0">
+                <div class="image-container">
+                    <img [src]="item.display_img_url || '../../../../assets/item-cards/flower.jpg'"
+                        alt="{{ item.name }}">
+                    <div class="overlay out-of-stock-overlay" *ngIf="item.quantity === 0">Out of Stock</div>
+                    <div class="overlay high-demand-overlay"
+                        *ngIf="item.quantity > 0 && item.quantity <= item.low_quantity">
+                        <span class="high-demand-text">ON HIGH DEMAND</span><br>
+                        <span class="quantity-left">(Only {{ item.quantity }} rewards left)</span>
+                    </div>
+                </div>
+                <div class="details">
+                    <h4>{{ item.name }}</h4>
+                    <p>{{ item.points }} Points</p>
+                    <p class="valid-until">
+                        <span class="valid-until-text">Valid Until</span>&nbsp;
+                        <span class="valid-until-date">{{ item.valid_until | date:'dd-MM-yyyy' }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</mat-drawer-container>

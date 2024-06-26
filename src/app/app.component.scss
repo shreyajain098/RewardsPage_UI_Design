@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .category-section {
+    width: 100% !important;
+  }
+}

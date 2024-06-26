@@ -1,0 +1,88 @@
+.categories {
+  padding: 20px;
+}
+
+.categories h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+mat-panel-description {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.applied-filters {
+  margin-bottom: 20px;
+}
+
+.applied-filters span {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.filter-item {
+  display: inline-flex;
+  background-color: #F5F5F5;
+  color: gray;
+  align-items: center;
+  border: 1px dotted gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.filter-item .close-btn {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.clear-filters {
+  background-color: transparent;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Angular Material Styles */
+.mat-card-header {
+  background-color: #ff0000;
+  color: white;
+}
+
+.mat-card-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mat-expansion-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mat-panel-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.selected-icon {
+  color: #ff0000;
+  margin-left: 10px;
+}
+
+.mat-expansion-panel-header-title {
+  flex-grow: 1;
+}
+
+.mat-expansion-panel-header-description {
+  flex-grow: 1;
+}
+
+.mat-expansion-panel:not([expanded]) .selected-icon {
+  display: none;
+}
