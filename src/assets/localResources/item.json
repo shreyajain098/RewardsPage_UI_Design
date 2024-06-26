@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Swiggy",
+        "points": 2,
+        "display_img_url": "../assets/item-cards/swiggy.jpg",
+        "quantity": 12,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Zomato",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/zomato.png",
+        "quantity": 11,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Ola",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/ola.jpg",
+        "quantity": 12,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Dominos",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/dominos.png",
+        "quantity": 20,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Dunzo",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/dunzo.png",
+        "quantity": 0,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Uber",
+        "points": 10,
+        "display_img_url": "../assets/item-cards/uber.jpg",
+        "quantity": 13,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Test Reward",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/flower.jpg",
+        "quantity": 12,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Test Reward",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/flower.jpg",
+        "quantity": 16,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    },
+    {
+        "name": "Myntra",
+        "points": 20,
+        "display_img_url": "../assets/item-cards/myntra.jpg",
+        "quantity": 7,
+        "valid_until": "2024-12-31",
+        "low_quantity": 10
+    }
+]
