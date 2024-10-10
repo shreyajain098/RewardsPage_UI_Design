@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
+The application features a clean and intuitive UI, displaying a variety of coupons categorized by type, making it easy for users to find and redeem offers. Users can view details of each coupon, such as expiration dates, point requirements, and category, ensuring they make informed choices. This project showcases effective use of UI design principles making use of Angular Material library.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
